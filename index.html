@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+    body{
+    background-color: rgba(191, 211, 216, 0.817);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ }
+.main{
+    width: 900px;
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid antiquewhite;
+    background-color: gainsboro;
+}
+ h1{
+     text-align: center;
+     color: firebrick;
+     font-family: 'Times New Roman', Times, serif;
+     font-weight: 600;
+ }
+ .container{
+     background-color: rgba(83, 237, 240, 0.838);
+     border-radius: 8px;
+     height: 80vh;
+     width: 600px;
+     padding: 15px;
+     opacity: 0.8;
+     border: 1px solid black;      
+     margin: 0 auto;             
+     
+     
+ }
+ input[type="text"],input[type="email"],input[type="number"],select{
+     width: 100%;
+     border-radius: 4px;
+     padding: 8px;
+     margin: 10px,0;
+     border: 1px solid #ccccccf3;
+     box-sizing: border-box;
+ }
+ .button{
+     width: 100%;
+     border-radius: 4px;
+     padding: 10px;
+     height: 40px;
+     background-color: blue;
+ }
+ h2{
+    text-align: center;
+ }
+ .e-list{
+    background-color: white;
+    text-decoration: none;
+    width: 635px;
+    border: 1px solid white;
+    margin-left: 130px;
+    align-items: center;
+    border-radius: 8px; 
+}
+ol li a{
+    text-decoration: none;
+}
+
+.e-details{
+    text-align: center;
+    width: 635px;
+    background-color: azure;
+    border: 1px solid whitesmoke;
+    border-radius:8px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 130px;
+}
+
+table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 20px;
+}
+th{
+ background-color: rgba(47, 73, 205, 0.954);
+ justify-content: space-evenly;
+}
+
+th, td {
+ padding: 16px;
+ text-align: center;
+}
+
+img { 
+ border-radius: 50%; 
+ width: 50px; 
+ height: 50px; 
+}
+
+.location{
+    width: 635px;
+    background-color: azure;
+    border: 1px solid whitesmoke;
+    margin-left: 130px;
+    border-radius:8px;
+    font-size: 18px;
+}
+
+iframe{
+ width:635px;
+ height:450px;
+ border:none;
+}
+
+</style>
+<body>
+    <div class="main">
+            <div class="container">
+                <h1>Employee Registration Form</h1>
+                <form >
+                    <label name="full name" id="full name">Full Name:<span class="required"></span></label><br>
+                    <input type="text" id="full name" required><br><br>
+                    <label name="email" id="email">Email:<span class="required"></span></label><br>
+                    <input type="email" id="email" required><br><br>
+                    <label name="department" id="department">Department:</label><br>
+                    <select >
+                        <option value="">IT</option>
+                        <option value="hr">HR</option>
+                        <option value="finance">Finance</option>
+                        <option value="marketing">Marketing</option>
+                    </select><br><br>
+                    <label name="employeeid">Employee Id:</label><br>
+                    <input type="number"><br><br>
+                    <label for="url">Profile Picture URL:</label><br>
+                    <input type="text"><br><br>
+                    <button class="button">Register Employee</button>
+
+                </form>
+            </div>
+            <br>
+            <div class="e-list">
+                <h2>Employee List</h2>
+                <ol>
+                    <li><a href="index.html" >John - john@example.com</a></li>
+                    <hr>
+                    <li><a href="index.html">Smith - smith@example.com </a></li>
+                    <hr>
+                </ol>
+            </div>
+            <br>
+    
+            <div class="e-details">
+                <h2>Employee Details</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Employee ID</th>
+                            <th>Department</th>
+                            <th>Profile Picture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>61</td>
+                            <td>HR</td>
+                            <td><img src="https://via.placeholder.com/50" alt="Profile"></td>
+                        </tr>
+                        <tr>
+                            <td>Smith</td>
+                            <td>62</td>
+                            <td>IT</td>
+                            <td><img src="https://via.placeholder.com/50" alt="Profile"></td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+            </div>
+            <br>
+            <div class="location">
+                <h2>Company Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d822.4778249142154!2d78.38999!3d17.49803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e1!3m2!1sen!2sin!4v1727266513689!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+ </div>
+</body>
+</html>
